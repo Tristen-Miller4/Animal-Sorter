@@ -7,7 +7,7 @@ import java.io.File;
 public class AnimalSorter
 
 {
-	static String totalAge;
+	static int totalAge;
 	static int counter;
 
 	public static void main(String[] args) throws IOException {
@@ -33,8 +33,8 @@ public class AnimalSorter
 			System.out.println(a);
 		}
 		
-		System.out.println("The Average Age of all the animal are " + totalAge  counter);
-
+		System.out.println("The Average Age of all the animal are " + totalAge / counter);
+//master branch
 		
 	}
 	
