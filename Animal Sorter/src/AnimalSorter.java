@@ -32,6 +32,8 @@ public class AnimalSorter
 		for (String a : animalNames) {
 			System.out.println(a);
 		}
+		
+		System.out.println("The Average Age of all the animal are " + totalAge  counter);
 
 		
 	}
