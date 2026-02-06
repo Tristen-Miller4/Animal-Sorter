@@ -1,10 +1,13 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.io.IOException;
 import java.io.File;
 public class AnimalSorter
 
 	{
+		static String totalAge;
+		static int counter;
 
 		public static void main(String[] args) throws IOException
 			{
@@ -14,19 +17,32 @@ public class AnimalSorter
 				while (animalSorter.hasNextLine())
 					{
 					String word = animalSorter.nextLine();
-					System.out.println(word);
+					//System.out.println(word);
 					String [] fredArray = word.split (",");
 					animalNames.add(fredArray[0]);
-					animalAges.add(fredArray [1]);
 					
+
+					Collections.sort(animalNames);
+					
+					animalAges.add(Integer.parseInt(fredArray[1]));
+					totalAge += (Integer.parseInt(fredArray[1]));
+					counter++;
 					}
+				
+				
+				
+				
 				for (String a: animalNames)
 					{
 						System.out.println(a);
 					}
 					
-				
-				
+					
+				for (Integer b : animalAges)
+				{
+					System.out.println(b);
+				}
+					
 
 			}
 
